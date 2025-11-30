@@ -8,16 +8,19 @@
     body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
     header { background: #111; color: #fff; padding: 2rem; text-align: center; }
     h1 { margin: 0; }
-    .section { padding: 2rem; max-width: 800px; margin: auto; }
-    .article-card { background: #fff; padding: 1rem 1.5rem; margin: 1rem 0; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    a { text-decoration: none; color: #0077cc; }
+    .section { padding: 2rem; max-width: 900px; margin: auto; }
+    .article { background: #fff; padding: 1.5rem; margin: 1.5rem 0; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .article-img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+    .photo-credit { font-size: 0.85rem; color: #555; margin-bottom: 1rem; font-style: italic; }
+    .abstract { font-size: 1rem; line-height: 1.5; }
+    a { color: #0077cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
     <h1>Sagnik Maitra</h1>
-    <p>Journalism Student | Reporter | Storyteller</p>
+    <p>Journalist | Reporter | Storyteller</p>
   </header>
 
   <section class="section">
@@ -28,33 +31,28 @@
   <section class="section">
     <h2>Published Work</h2>
 
-    <!-- Add your articles here -->
-    <div class="article-card">
-      <img src="first.jpeg" alt="Article image" style="width:100%; border-radius:10px; margin-bottom:10px;" />
+    <!-- FIRST ARTICLE -->
+    <div class="article">
+      <img src="first.jpeg" alt="Karnataka MSME event photo" class="article-img">
+      <p class="photo-credit">Chief Minister Siddaramaiah and Deputy Chief Minister D.K. Shivakumar during the platinum jubilee celebrations of Karnataka Small Scale Industries Association in Bengaluru on Saturday. | Photo Credit: <strong>Sagnik Maitra</strong></p>
       <h3><a href="https://www.thehindu.com/news/national/karnataka/karnataka-cm-promises-dedicated-msme-department-to-promote-small-industries/article69588531.ece" target="_blank">Karnataka CM promises dedicated MSME department to promote small industries</a></h3>
-      <p><strong>Abstract:</strong> The report highlights Karnataka Chief Minister’s announcement of a dedicated MSME department aimed at boosting small industries and enhancing support systems for entrepreneurs across the State.</p>
+      <p class="abstract"><strong>Abstract:</strong> The Karnataka Chief Minister announced the creation of a dedicated MSME department aimed at strengthening small industries, supporting entrepreneurship, and improving ease of doing business across the State.</p>
     </div>
 
-    <div class="article-card">
-      <img src="second.jpeg" alt="Delivery agents in rain" style="width:100%; border-radius:10px; margin-bottom:10px;" />
+    <!-- SECOND ARTICLE -->
+    <div class="article">
+      <img src="second.jpeg" alt="Delivery agents in Bengaluru" class="article-img">
+      <p class="photo-credit">Despite being an essential part of Bengaluru’s daily convenience, delivery agents say that their voices often go unheard, particularly when it comes to safety and fair working conditions. | Photo Credit: <strong>K. MURALI KUMAR</strong></p>
       <h3><a href="https://www.thehindu.com/news/national/karnataka/delivery-agents-continue-to-brave-bengalurus-monsoon-without-safety-nets/article69605132.ece" target="_blank">Delivery agents continue to brave Bengaluru’s monsoon without safety nets</a></h3>
-      <p><strong>Abstract:</strong> This story sheds light on the challenges faced by delivery workers who navigate Bengaluru’s heavy monsoon without proper safety gear, protective infrastructure, or institutional support, exposing vulnerabilities in gig-economy labour practices.</p>
+      <p class="abstract"><strong>Abstract:</strong> Delivery workers across Bengaluru highlight growing challenges related to road safety, long working hours, and lack of institutional protection despite their indispensable role in the city’s gig economy.</p>
     </div>
 
-    <div class="article-card">
-      <img src="third.jpeg" alt="Accessibility issues" style="width:100%; border-radius:10px; margin-bottom:10px;" />
+    <!-- THIRD ARTICLE -->
+    <div class="article">
+      <img src="third.jpeg" alt="Public toilet accessibility" class="article-img">
+      <p class="photo-credit">A physically challenged person steps out after using a toilet on S. P. Road in Bengaluru. | Photo Credit: <strong>Sudhakara Jain</strong></p>
       <h3><a href="https://www.thehindu.com/news/cities/bangalore/disabled-toilets-not-so-accessible-in-public-spaces-of-bengaluru/article69697454.ece" target="_blank">‘Disabled toilets’ not so accessible in public spaces of Bengaluru</a></h3>
-      <p><strong>Abstract:</strong> This article examines the lack of true accessibility in public ‘disabled-friendly’ toilets across Bengaluru, revealing design flaws, inadequate maintenance, and systemic oversight that restrict usability for people with disabilities.</p>
-    </div>
-
-    <div class="article-card">
-      <h3><a href="#">Article Title 2</a></h3>
-      <p>Short description or excerpt of the article...</p>
-    </div>
-
-    <div class="article-card">
-      <h3><a href="#">Article Title 3</a></h3>
-      <p>Short description or excerpt of the article...</p>
+      <p class="abstract"><strong>Abstract:</strong> The shortage of accessible public toilets in Bengaluru continues to create daily challenges for people with disabilities, highlighting the need for inclusive infrastructure planning and better execution.</p>
     </div>
 
   </section>
