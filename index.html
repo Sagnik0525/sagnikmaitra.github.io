@@ -10,11 +10,40 @@
     h1 { margin: 0; }
     .section { padding: 2rem; max-width: 900px; margin: auto; }
     .article { background: #fff; padding: 1.5rem; margin: 1.5rem 0; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .article-img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+
+    /* NEW Newspaper Image Styling */
+    .article-img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover; /* Crops neatly */
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Newspaper shadow effect */
+      transition: transform 0.3s ease;
+    }
+    .article-img:hover {
+      transform: scale(1.03); /* Zoom-on-hover effect */
+    }
+
     .photo-credit { font-size: 0.85rem; color: #555; margin-bottom: 1rem; font-style: italic; }
     .abstract { font-size: 1rem; line-height: 1.5; }
     a { color: #0077cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
+    /* Button for PDF download */
+    .pdf-button {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #0077cc;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    .pdf-button:hover {
+      background: #005fa3;
+    }
   </style>
 </head>
 <body>
@@ -57,10 +86,15 @@
 
       <!-- FOURTH ARTICLE -->
     <div class="article">
-      <img src="stem.jpg" alt="STEM has no gender article image" class="article-img">
+      <img src="stem  (1).jpg" alt="STEM has no gender article image" class="article-img">
       <p class="photo-credit">Newspaper clipping of the article titled 'STEM has no gender: Docu sparks dialogue on women in tech'.</p>
+
       <h3><a href="#" target="_blank">STEM has no gender: Docu sparks dialogue on women in tech</a></h3>
+
       <p class="abstract"><strong>Abstract:</strong> This feature covers the screening of the Slovenian documentary <em>Flow (Tok)</em> at the Bangalore International Centre, followed by a panel discussion on women’s representation in STEM. The article highlights insights from diplomats, STEM leaders, and filmmakers on systemic gender bias, mentorship gaps, and the importance of inclusive professional environments.</p>
+
+      <!-- PDF Download Button (upload PDF to GitHub and replace file name) -->
+      <a class="pdf-button" href="stem.pdf" download>Download PDF Version</a>
     </div>
 
   </section>
