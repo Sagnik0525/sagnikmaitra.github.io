@@ -68,18 +68,12 @@
       margin-bottom: 10px;
       transition: 0.3s;
     }
-    .article-img:hover {
-      transform: scale(1.03);
-    }
+    .article-img:hover { transform: scale(1.03); }
 
     .photo-credit { font-size: 0.85rem; font-style: italic; color: #444; }
 
     /* COLLAPSIBLE READ MORE */
-    .read-more {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease;
-    }
+    .read-more { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
     .read-btn {
       display: inline-block;
       padding: 8px 12px;
@@ -137,6 +131,7 @@
     }
     footer a { color: var(--accent-dark); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
   </style>
 
   <script>
@@ -165,26 +160,43 @@
     <p>Journalist • Reporter • Storyteller</p>
   </header>
 
+  <!-- ABOUT -->
   <section class="section" id="about">
     <h2>About Me</h2>
-    <p>I’m a journalism student and former intern at <strong>The Hindu, Bengaluru</strong>, covering city, culture, gender, STEM and public-interest stories. I enjoy people-centric reporting and multimedia storytelling.</p>
-    <p><strong>Visit my author page:</strong> <a href="https://www.patralok.com/author/sagnik-maitrapatralok-com/" target="_blank">Patralok — Author Profile</a></p>
+    <p>
+      I’m a journalism student and former intern at <strong>The Hindu, Bengaluru</strong>,
+      covering city, culture, gender, STEM and public-interest stories.
+      I enjoy people-centric reporting and multimedia storytelling.
+    </p>
+
+    <p>
+      <strong>Visit my author page:</strong>
+      <a href="https://www.patralok.com/author/sagnik-maitrapatralok-com/" target="_blank">
+        Patralok — Author Profile
+      </a>
+    </p>
   </section>
 
+  <!-- RESUME SECTION -->
   <section class="section" id="resume">
     <h2>Resume / CV</h2>
     <p>You can view or download my full resume below:</p>
-    <a class="pdf-button" href="Sagnik Maitra Final Resume.pdf" download>Download My Resume (PDF)</a>
+
+    <a class="pdf-button" href="Sagnik Maitra Final Resume.pdf" download>
+      Download My Resume (PDF)
+    </a>
+
     <iframe src="Sagnik Maitra Final Resume.pdf" height="600px"></iframe>
   </section>
 
+  <!-- ARTICLES -->
   <section class="section" id="articles">
     <h2>Published Work</h2>
 
-    <!-- FIRST ARTICLE -->
+    <!-- ARTICLE 1 -->
     <div class="article">
       <span class="badge">Politics / Governance</span>
-      <img src="first.jpeg" class="article-img" alt="Karnataka CM MSME event">
+      <img src="first.jpeg" class="article-img">
       <p class="photo-credit">Photo Credit: Sagnik Maitra</p>
       <h3>Karnataka CM promises dedicated MSME department</h3>
       <div class="read-more" id="read1">
@@ -193,10 +205,10 @@
       <button class="read-btn" onclick="toggleReadMore('read1')">Read More</button>
     </div>
 
-    <!-- SECOND ARTICLE -->
+    <!-- ARTICLE 2 -->
     <div class="article">
       <span class="badge">City / Labour</span>
-      <img src="second.jpeg" class="article-img" alt="Delivery agents in rain">
+      <img src="second.jpeg" class="article-img">
       <p class="photo-credit">Photo Credit: K. Murali Kumar</p>
       <h3>Delivery agents brave Bengaluru’s monsoon</h3>
       <div class="read-more" id="read2">
@@ -205,20 +217,76 @@
       <button class="read-btn" onclick="toggleReadMore('read2')">Read More</button>
     </div>
 
-    <!-- THIRD ARTICLE -->
+    <!-- ARTICLE 3 -->
     <div class="article">
       <span class="badge">Accessibility / Public Spaces</span>
-      <img src="third.jpeg" class="article-img" alt="Accessible toilet in Bengaluru">
+      <img src="third.jpeg" class="article-img">
       <p class="photo-credit">Photo Credit: Sudhakara Jain</p>
-      <h3>‘Disabled toilets’ not accessible in Bengaluru</h3>
+      <h3>‘Disabled toilets’ not so accessible in Bengaluru</h3>
       <div class="read-more" id="read3">
-        <p><strong>Abstract:</strong> Many public toilets labelled as "disabled-friendly" fail in basic accessibility standards…</p>
+        <p><strong>Abstract:</strong> Many public toilets labelled as “disabled-friendly” fail in basic accessibility standards…</p>
       </div>
       <button class="read-btn" onclick="toggleReadMore('read3')">Read More</button>
     </div>
 
-    <!-- FOURTH ARTICLE (STEM) -->
+    <!-- ARTICLE 4 (STEM) -->
     <div class="article">
       <span class="badge">Women / STEM / Culture</span>
-      <img src="stem  (1).jpg" class="article-img" alt="STEM has no gender clipping">
-      <p class="photo-credit">Newspaper clipping: STEM
+      <img src="stem  (1).jpg" class="article-img">
+      <p class="photo-credit">Newspaper clipping: STEM has no gender</p>
+      <h3>STEM has no gender: Docu sparks dialogue</h3>
+
+      <p><strong>Abstract:</strong> Coverage of the Slovenian documentary <em>Flow (Tok)</em> and panel discussion on women in STEM.</p>
+
+      <a class="pdf-button" href="stem.pdf" download>Download PDF</a>
+      <iframe src="stem.pdf" height="600px"></iframe>
+    </div>
+
+    <!-- PATRA LOK SECTION -->
+    <h2>External Publications — Patralok</h2>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/ashish-chanchlani-goes-behind-the-camera-in-spooky-crazy-debut/" target="_blank">Ashish Chanchlani Goes Behind the Camera</a></h3>
+      <p class="abstract">Influencer-driven horror comedy and Ashish Chanchlani’s directorial shift.</p>
+    </div>
+
+    <div class="article">
+      <span class="badge">Cinema</span>
+      <h3><a href="https://www.patralok.com/srks-king-gets-bigger-with-new-cast-members/" target="_blank">SRK’s KING gets Bigger</a></h3>
+      <p class="abstract">New cast updates shaping hype around Shah Rukh Khan’s next big project.</p>
+    </div>
+
+    <div class="article">
+      <span class="badge">Cinema</span>
+      <h3><a href="https://www.patralok.com/the-royals-rumble-no-spark-still-a-spark/" target="_blank">The Royals’ Rumble</a></h3>
+      <p class="abstract">Chemistry, chaos and performance in a star-led rivalry.</p>
+    </div>
+
+    <div class="article">
+      <span class="badge">Cinema</span>
+      <h3><a href="https://www.patralok.com/two-stars-one-showdown/" target="_blank">Two Stars, One Showdown</a></h3>
+      <p class="abstract">A closer look at star dynamics and narrative build-up.</p>
+    </div>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/tripathi-says-no-babu-rao-to-hera-pheri-buzz/" target="_blank">Tripathi Says ‘No BaBu Rao’</a></h3>
+      <p class="abstract">The viral fan speculation surrounding iconic comedy revival.</p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>Contact: <a href="mailto:maitrarita99@gmail.com">maitrarita99@gmail.com</a></p>
+
+    <p>
+      <strong>Socials:</strong><br>
+      <a href="https://www.linkedin.com/in/sagnik-maitra-" target="_blank">LinkedIn</a> ·
+      <a href="https://www.instagram.com/theycallme_sagnik/" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
