@@ -68,18 +68,11 @@
       margin-bottom: 10px;
       transition: 0.3s;
     }
-    .article-img:hover {
-      transform: scale(1.03);
-    }
+    .article-img:hover { transform: scale(1.03); }
 
     .photo-credit { font-size: 0.85rem; font-style: italic; color: #444; }
 
-    /* COLLAPSIBLE READ MORE */
-    .read-more {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease;
-    }
+    .read-more { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
     .read-btn {
       display: inline-block;
       padding: 8px 12px;
@@ -87,13 +80,12 @@
       background: var(--accent);
       color: white;
       border-radius: 6px;
-      cursor: pointer;
       border: none;
+      cursor: pointer;
       font-size: 0.9rem;
     }
     .read-btn:hover { background: var(--accent-dark); }
 
-    /* CATEGORY BADGE */
     .badge {
       display: inline-block;
       padding: 4px 10px;
@@ -104,7 +96,6 @@
       margin-bottom: 10px;
     }
 
-    /* LINKS */
     a { color: var(--accent-dark); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
@@ -127,7 +118,6 @@
       width: 100%;
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
       padding: 2rem;
@@ -137,6 +127,7 @@
     }
     footer a { color: var(--accent-dark); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
   </style>
 
   <script>
@@ -148,7 +139,6 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav>
     <div><strong>Sagnik Maitra</strong></div>
     <div>
@@ -168,10 +158,8 @@
   <section class="section" id="about">
     <h2>About Me</h2>
     <p>
-      I’m a journalism student and former intern at <strong>The Hindu, Bengaluru</strong>, as well as
-      <strong>News Trail</strong> and the online news portal <strong>PMN Patralok</strong>, where I worked as an
-      entertainment journalist. I cover city, culture, gender, STEM, and public-interest stories.
-      I enjoy people-centric reporting and multimedia storytelling.
+      I’m a journalism student and former intern at <strong>The Hindu, Bengaluru</strong>, <strong>News Trail</strong>, and the online news portal <strong>PMN Patralok</strong> (as entertainment journalist).  
+      I cover city, culture, gender, STEM and public-interest stories — always with a people-centric, multimedia approach.
     </p>
     <p>
       <strong>Visit my author page:</strong>
@@ -191,44 +179,71 @@
   <section class="section" id="articles">
     <h2>Published Work</h2>
 
-    <!-- FIRST ARTICLE -->
+    <!-- Example The Hindu / other articles here ... -->
+
+    <!-- External Publications — Patralok -->
+    <h3>External Publications — Patralok</h3>
+
     <div class="article">
-      <span class="badge">Politics / Governance</span>
-      <img src="first.jpeg" class="article-img" alt="Karnataka CM MSME event">
-      <p class="photo-credit">Photo Credit: Sagnik Maitra</p>
-      <h3>Karnataka CM promises dedicated MSME department</h3>
-      <div class="read-more" id="read1">
-        <p><strong>Abstract:</strong> Karnataka announces a new MSME-focused government department to boost small-scale industries…</p>
-      </div>
-      <button class="read-btn" onclick="toggleReadMore('read1')">Read More</button>
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/ashish-chanchlani-goes-behind-the-camera-in-spooky-crazy-debut/" target="_blank">Ashish Chanchlani Goes Behind the Camera in Spooky-Crazy Debut</a></h3>
     </div>
 
-    <!-- SECOND ARTICLE -->
     <div class="article">
-      <span class="badge">City / Labour</span>
-      <img src="second.jpeg" class="article-img" alt="Delivery agents in rain">
-      <p class="photo-credit">Photo Credit: K. Murali Kumar</p>
-      <h3>Delivery agents brave Bengaluru’s monsoon</h3>
-      <div class="read-more" id="read2">
-        <p><strong>Abstract:</strong> Gig workers face unsafe conditions, long hours, and lack of support as rains worsen…</p>
-      </div>
-      <button class="read-btn" onclick="toggleReadMore('read2')">Read More</button>
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/dhanush-aishwarya-reunite-graduation-not-separation/" target="_blank">Dhanush & Aishwarya Reunite: Graduation, Not Separation!</a></h3>
     </div>
 
-    <!-- THIRD ARTICLE -->
     <div class="article">
-      <span class="badge">Accessibility / Public Spaces</span>
-      <img src="third.jpeg" class="article-img" alt="Accessible toilet in Bengaluru">
-      <p class="photo-credit">Photo Credit: Sudhakara Jain</p>
-      <h3>‘Disabled toilets’ not accessible in Bengaluru</h3>
-      <div class="read-more" id="read3">
-        <p><strong>Abstract:</strong> Many public toilets labelled as "disabled-friendly" fail in basic accessibility standards…</p>
-      </div>
-      <button class="read-btn" onclick="toggleReadMore('read3')">Read More</button>
+      <span class="badge">Arts</span>
+      <h3><a href="https://www.patralok.com/himesh-hits-back-naak-se-or-not-still-a-hit/" target="_blank">Himesh Hits Back: “Naak Se or Not, Still a Hit!”</a></h3>
     </div>
 
-    <!-- FOURTH ARTICLE (STEM) -->
     <div class="article">
-      <span class="badge">Women / STEM / Culture</span>
-      <img src="stem  (1).jpg" class="article-img" alt="STEM has no gender clipping">
-      <p class="photo-credit">Newspaper clipping: STEM
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/saif-sides-with-deepika-dad-goals-over-drama/" target="_blank">Saif Sides with Deepika? Dad Goals Over Drama!</a></h3>
+    </div>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/north-south-romance-worth-watching/" target="_blank">North–South Romance Worth Watching?</a></h3>
+    </div>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/prithviraj-to-direct-hrithiks-next/" target="_blank">Prithviraj to Direct Hrithik’s Next?</a></h3>
+    </div>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/aryan-khans-bold-bollywood-debut-has-stars-buzzing-bright/" target="_blank">Aryan Khan’s Bold Bollywood Debut Has Stars Buzzing Bright</a></h3>
+    </div>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/didnt-love-sweety-nushrratt-spills-sktks-secrets/" target="_blank">“Didn’t Love Sweety!” Nushrratt Spills SKTKS Secrets</a></h3>
+    </div>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/tripathi-says-no-babu-rao-to-hera-pheri-buzz/" target="_blank">Tripathi Says ‘No BaBu Rao’ to Hera Pheri Buzz!</a></h3>
+    </div>
+
+    <div class="article">
+      <span class="badge">Entertainment</span>
+      <h3><a href="https://www.patralok.com/tovinos-narivetta-truth-guns-land-wars/" target="_blank">Tovino’s Narivetta: Truth, Guns & Land Wars</a></h3>
+    </div>
+
+  </section>
+
+  <footer id="contact">
+    <p>Contact: <a href="mailto:maitrarita99@gmail.com">maitrarita99@gmail.com</a></p>
+    <p>
+      <strong>Socials:</strong><br>
+      <a href="https://www.linkedin.com/in/sagnik-maitra-" target="_blank">LinkedIn</a> ·
+      <a href="https://www.instagram.com/theycallme_sagnik/" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
